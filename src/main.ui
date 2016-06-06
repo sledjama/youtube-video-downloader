@@ -33,7 +33,7 @@
    <string>Youtube Downloader</string>
   </property>
   <property name="windowIcon">
-   <iconset>
+   <iconset resource="resources.qrc">
     <normaloff>:/images/images/logo.png</normaloff>:/images/images/logo.png</iconset>
   </property>
   <property name="toolButtonStyle">
@@ -110,6 +110,16 @@
       <string>video_id</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>path</string>
+     </property>
+    </column>
    </widget>
    <widget class="QLineEdit" name="searchLineEdit">
     <property name="geometry">
@@ -177,7 +187,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="addURL">
    <property name="icon">
-    <iconset>
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/add.png</normaloff>:/images/images/add.png</iconset>
    </property>
    <property name="text">

@@ -44,11 +44,13 @@ class YoutubeDownloader(QtGui.QMainWindow):
         self.main_ui.setupUi(self)
         self.setWindowTitle(QtGui.QApplication.translate("YoutubeDownloader", "Youtube Downloader - "+version, None))
         
-        
+        self.loadVideos()
         self.icon = QtGui.QIcon()
         self.icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/images/logo.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         QtCore.QObject.connect(self.main_ui.addURL, QtCore.SIGNAL(_fromUtf8("triggered()")), self.showInputForm)
         QtCore.QObject.connect(self.main_ui.actionPreferences, QtCore.SIGNAL(_fromUtf8("triggered()")), self.openSettings)
+        QtCore.QObject.connect(self.main_ui.videoTreeW, QtCore.SIGNAL(_fromUtf8("itemDoubleClicked(QTreeWidgetItem *,int)")), self.openFile)
+        QtCore.QObject.connect(self.main_ui.searchLineEdit, QtCore.SIGNAL(_fromUtf8("textChanged (const QString&)")), self.searchDB)
         self.main_ui.videoTreeW.setColumnWidth(0, 350)
         self.main_ui.videoTreeW.setColumnWidth(1, 100)
 
@@ -97,7 +99,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
             matches[0].setSelected(True)
 
     def onDone(self,ret,item2search):
-        print(self.storage_path)
+        insert("INSERT INTO videos (video_id, namex, sizex, storage_path, statusx) VALUES(?,?,?,?,?)",(item2search,ret, 0,self.storage_path,"Starting..."))
         matches=self.main_ui.videoTreeW.findItems(item2search,QtCore.Qt.MatchFlag(),4)
         matches[0].setText(0,ret)
         matches[0].setText(1,"Downloading video")
@@ -108,7 +110,15 @@ class YoutubeDownloader(QtGui.QMainWindow):
     def onStatus(self,ret,item2search):
         matches=self.main_ui.videoTreeW.findItems(item2search,QtCore.Qt.MatchFlag(),4)
         matches[0].setText(2,ret)
-        self.alert(ret)
+        size=re.findall(r'\d+\.\d+Mib', ret)
+        print(size)
+        if size.__len__()>0:
+            extractedSize=size[0]
+        else:
+            extractedSize="0Mib"
+        params=(self.storage_path,ret,extractedSize,item2search,)
+        #print(params)
+        update("update videos set storage_path=?, statusx=?, sizex=? where video_id=?",params)
         
     def launchFile(self, theFile):
         os.startfile(theFile,"open")
@@ -125,7 +135,39 @@ class YoutubeDownloader(QtGui.QMainWindow):
         else:
             self.storage_path=""
 
+    def loadVideos(self):
+        data=select("SELECT id, video_id, namex, sizex, datesx, storage_path, statusx FROM videos ORDER BY id DESC limit 100").fetchall()
+        self.populateTreeWidget(data)
+        self.main_ui.videoTreeW.setColumnHidden(4,True)
+        self.main_ui.videoTreeW.setColumnHidden(5,True)
+        del data
 
+
+    def openFile(self, twi, indx):
+        self.alert(twi.text(6)+twi.text(0)+"_"+twi.text(4)+".mp4")
+        os.startfile(twi.text(6)+twi.text(0)+"_"+twi.text(4)+".mp4")
+
+    def searchDB(self, searchText):
+        #though i dont see most saving more than 10,000 videos
+        #this gets called everytime a text changes in the search box
+        #TODO, will rerun a test to see if this is more efficent or to put namex/id in list on first searchdb call
+        #then search the list then come after the row in DB using the id
+
+        data=select("SELECT id, video_id, namex, sizex, datesx, storage_path, statusx FROM videos WHERE namex like ? ORDER BY id DESC", ("%"+searchText+"%",)).fetchall()
+        self.populateTreeWidget(data)
+
+    def populateTreeWidget(self, data):
+        self.main_ui.videoTreeW.clear()
+        for x in data:
+            item=QtGui.QTreeWidgetItem(self.main_ui.videoTreeW)
+            item.setText(0, str(x[2]))
+            item.setText(1, str(x[3]))
+            item.setText(2,  str(x[6]))
+            item.setText(3,  str(x[4]))
+            item.setText(4,  str(x[1]))
+            item.setText(5,  str(x[0]))
+            item.setText(6,  str(x[5]))
+            self.main_ui.videoTreeW.insertTopLevelItem(0,item)
 
 
 

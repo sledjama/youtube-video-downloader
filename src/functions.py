@@ -85,8 +85,9 @@ def createDB():
     global conn
     c = conn.cursor()
     # Create table
-    c.execute('''CREATE TABLE IF NOT EXISTS "videos" (id INTEGER PRIMARY KEY AUTOINCREMENT, video_id TEXT, name TEXT, size INTEGER, dates TIMESTAMP DEFAULT CURRENT_TIMESTAMP);''')
+    c.execute('''CREATE TABLE IF NOT EXISTS "videos" (id INTEGER PRIMARY KEY AUTOINCREMENT, video_id TEXT, namex TEXT, sizex TEXT, storage_path TEXT, statusx TEXT, datesx TIMESTAMP DEFAULT CURRENT_TIMESTAMP);''')
     c.execute('''CREATE TABLE IF NOT EXISTS "settings" ("id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL, "name" TEXT NOT NULL  UNIQUE , "value" TEXT);''')
+    c.execute('''INSERT INTO  settings (name, value) SELECT "storage_path","" WHERE NOT EXISTS (SELECT 1 FROM settings WHERE  name="storage_path");''')
     conn.commit()
     print("table created")
 
