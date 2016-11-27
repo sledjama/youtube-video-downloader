@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'main.ui'
 #
-# Created: Fri Apr 24 06:16:10 2015
-#      by: PyQt4 UI code generator 4.9
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -12,7 +11,16 @@ from PyQt4 import QtCore, QtGui
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
-    _fromUtf8 = lambda s: s
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
 
 class Ui_main(object):
     def setupUi(self, main):
@@ -52,7 +60,7 @@ class Ui_main(object):
         self.searchLineEdit.setObjectName(_fromUtf8("searchLineEdit"))
         main.setCentralWidget(self.centralwidget)
         self.menuBar = QtGui.QMenuBar(main)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 812, 18))
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 812, 21))
         self.menuBar.setObjectName(_fromUtf8("menuBar"))
         self.menuHelp = QtGui.QMenu(self.menuBar)
         self.menuHelp.setObjectName(_fromUtf8("menuHelp"))
@@ -145,41 +153,43 @@ class Ui_main(object):
         QtCore.QMetaObject.connectSlotsByName(main)
 
     def retranslateUi(self, main):
-        main.setWindowTitle(QtGui.QApplication.translate("main", "Youtube Downloader", None, QtGui.QApplication.UnicodeUTF8))
+        main.setWindowTitle(_translate("main", "Youtube Downloader", None))
         self.videoTreeW.setSortingEnabled(True)
-        self.videoTreeW.headerItem().setText(0, QtGui.QApplication.translate("main", "Video Name", None, QtGui.QApplication.UnicodeUTF8))
-        self.videoTreeW.headerItem().setText(1, QtGui.QApplication.translate("main", "Size", None, QtGui.QApplication.UnicodeUTF8))
-        self.videoTreeW.headerItem().setText(2, QtGui.QApplication.translate("main", "Status", None, QtGui.QApplication.UnicodeUTF8))
-        self.videoTreeW.headerItem().setText(3, QtGui.QApplication.translate("main", "Date Added", None, QtGui.QApplication.UnicodeUTF8))
-        self.videoTreeW.headerItem().setText(4, QtGui.QApplication.translate("main", "video_id", None, QtGui.QApplication.UnicodeUTF8))
-        self.searchLineEdit.setPlaceholderText(QtGui.QApplication.translate("main", "Search Video", None, QtGui.QApplication.UnicodeUTF8))
-        self.menuHelp.setTitle(QtGui.QApplication.translate("main", "Help", None, QtGui.QApplication.UnicodeUTF8))
-        self.menuSettings.setTitle(QtGui.QApplication.translate("main", "Settings", None, QtGui.QApplication.UnicodeUTF8))
-        self.ToolBar.setWindowTitle(QtGui.QApplication.translate("main", "Tool Bar", None, QtGui.QApplication.UnicodeUTF8))
-        self.addURL.setText(QtGui.QApplication.translate("main", "Add  URL", None, QtGui.QApplication.UnicodeUTF8))
-        self.addURL.setToolTip(QtGui.QApplication.translate("main", "Add Youtube URL to queue", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionManage_servstat.setText(QtGui.QApplication.translate("main", "Manage service station", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionManage_servstat.setToolTip(QtGui.QApplication.translate("main", "Manage location", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionManage_user.setText(QtGui.QApplication.translate("main", "Manage users", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionManage_user.setToolTip(QtGui.QApplication.translate("main", "Manage user", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionManage_messages.setText(QtGui.QApplication.translate("main", "Manage tickets", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionManage_messages.setToolTip(QtGui.QApplication.translate("main", "Manage messages", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionShow_left_pane.setText(QtGui.QApplication.translate("main", "Toggle left pane", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionCreate_Service_Station.setText(QtGui.QApplication.translate("main", "Create service station", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionEdit_service_station.setText(QtGui.QApplication.translate("main", "Edit service station", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionDelete_service_station.setText(QtGui.QApplication.translate("main", "Delete service station", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionHide_toolbar.setText(QtGui.QApplication.translate("main", "Toggle Toolbar", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionManage_Logs.setText(QtGui.QApplication.translate("main", "Manage Logs", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionBackup_Data.setText(QtGui.QApplication.translate("main", "Backup Database", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionManage_services.setText(QtGui.QApplication.translate("main", "Manage services", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionContact_us.setText(QtGui.QApplication.translate("main", "Messages", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionJob_application.setText(QtGui.QApplication.translate("main", "Job application", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionTraffic.setText(QtGui.QApplication.translate("main", "Traffic", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionBlocked_IPs.setText(QtGui.QApplication.translate("main", "Blocked IPs", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionReportProblem.setText(QtGui.QApplication.translate("main", "Report a problem", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionPreferences.setText(QtGui.QApplication.translate("main", "Preferences", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionChange_Password.setText(QtGui.QApplication.translate("main", "Change Password", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionService_Station.setText(QtGui.QApplication.translate("main", "Service Station", None, QtGui.QApplication.UnicodeUTF8))
-        self.actionService_Station.setToolTip(QtGui.QApplication.translate("main", "View history of service stations in your care", None, QtGui.QApplication.UnicodeUTF8))
+        self.videoTreeW.headerItem().setText(0, _translate("main", "Video Name", None))
+        self.videoTreeW.headerItem().setText(1, _translate("main", "Size", None))
+        self.videoTreeW.headerItem().setText(2, _translate("main", "Status", None))
+        self.videoTreeW.headerItem().setText(3, _translate("main", "Date Added", None))
+        self.videoTreeW.headerItem().setText(4, _translate("main", "video_id", None))
+        self.videoTreeW.headerItem().setText(5, _translate("main", "id", None))
+        self.videoTreeW.headerItem().setText(6, _translate("main", "path", None))
+        self.searchLineEdit.setPlaceholderText(_translate("main", "Search Video", None))
+        self.menuHelp.setTitle(_translate("main", "Help", None))
+        self.menuSettings.setTitle(_translate("main", "Settings", None))
+        self.ToolBar.setWindowTitle(_translate("main", "Tool Bar", None))
+        self.addURL.setText(_translate("main", "Add  URL", None))
+        self.addURL.setToolTip(_translate("main", "Add Youtube URL to queue", None))
+        self.actionManage_servstat.setText(_translate("main", "Manage service station", None))
+        self.actionManage_servstat.setToolTip(_translate("main", "Manage location", None))
+        self.actionManage_user.setText(_translate("main", "Manage users", None))
+        self.actionManage_user.setToolTip(_translate("main", "Manage user", None))
+        self.actionManage_messages.setText(_translate("main", "Manage tickets", None))
+        self.actionManage_messages.setToolTip(_translate("main", "Manage messages", None))
+        self.actionShow_left_pane.setText(_translate("main", "Toggle left pane", None))
+        self.actionCreate_Service_Station.setText(_translate("main", "Create service station", None))
+        self.actionEdit_service_station.setText(_translate("main", "Edit service station", None))
+        self.actionDelete_service_station.setText(_translate("main", "Delete service station", None))
+        self.actionHide_toolbar.setText(_translate("main", "Toggle Toolbar", None))
+        self.actionManage_Logs.setText(_translate("main", "Manage Logs", None))
+        self.actionBackup_Data.setText(_translate("main", "Backup Database", None))
+        self.actionManage_services.setText(_translate("main", "Manage services", None))
+        self.actionContact_us.setText(_translate("main", "Messages", None))
+        self.actionJob_application.setText(_translate("main", "Job application", None))
+        self.actionTraffic.setText(_translate("main", "Traffic", None))
+        self.actionBlocked_IPs.setText(_translate("main", "Blocked IPs", None))
+        self.actionReportProblem.setText(_translate("main", "Report a problem", None))
+        self.actionPreferences.setText(_translate("main", "Preferences", None))
+        self.actionChange_Password.setText(_translate("main", "Change Password", None))
+        self.actionService_Station.setText(_translate("main", "Service Station", None))
+        self.actionService_Station.setToolTip(_translate("main", "View history of service stations in your care", None))
 
 import resources_rc

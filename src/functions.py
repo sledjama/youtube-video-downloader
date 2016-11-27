@@ -58,13 +58,16 @@ def deleteTWI(tree):
 
 def video_id(value):
     # curled  from http://stackoverflow.com/questions/4356538/how-can-i-extract-video-id-from-youtubes-link-in-python
-    # submitted by Mikhail Kashkin
+    #
+    #  submitted by Mikhail Kashkin
+    # modified by Ajayi seun to return list if exists
     """
     Examples:
     - http://youtu.be/SA2iWivDJiE
     - http://www.youtube.com/watch?v=_oPAwA_Udwc&feature=feedu
     - http://www.youtube.com/embed/SA2iWivDJiE
     - http://www.youtube.com/v/SA2iWivDJiE?version=3&amp;hl=en_US
+    -https://www.youtube.com/watch?v=cox06WZ6HMI&list=PLKt6aXnD1eKtO_NUn0ImSkxr22VbJHTKA
     """
     query = urlparse(value)
     if query.hostname == 'youtu.be':
@@ -72,7 +75,12 @@ def video_id(value):
     if query.hostname in ('www.youtube.com', 'youtube.com'):
         if query.path == '/watch':
             p = parse_qs(query.query)
-            return p['v'][0]
+            if "list" in p:
+                return p['list'][0]
+            elif "v" in p:
+                return p['v'][0]
+            else:
+                return "Invalid!"
         if query.path[:7] == '/embed/':
             return query.path.split('/')[2]
         if query.path[:3] == '/v/':

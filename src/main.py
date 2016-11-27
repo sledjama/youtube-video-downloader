@@ -34,7 +34,9 @@ class YoutubeDownloader(QtGui.QMainWindow):
         """
 
         self.storage_path=""
+        self.spawnit=None
         self.loadStoragePath()
+        self.connectionErrorFlag=False
         
         QtGui.QMainWindow.__init__(self, parent)
         self.setWindowIcon(QtGui.QIcon(':/images/logo.png'))
@@ -49,19 +51,90 @@ class YoutubeDownloader(QtGui.QMainWindow):
         self.icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/images/logo.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         QtCore.QObject.connect(self.main_ui.addURL, QtCore.SIGNAL(_fromUtf8("triggered()")), self.showInputForm)
         QtCore.QObject.connect(self.main_ui.actionPreferences, QtCore.SIGNAL(_fromUtf8("triggered()")), self.openSettings)
+        QtCore.QObject.connect(self.main_ui.actionReportProblem, QtCore.SIGNAL(_fromUtf8("triggered()")), self.reportProblem)
         QtCore.QObject.connect(self.main_ui.videoTreeW, QtCore.SIGNAL(_fromUtf8("itemDoubleClicked(QTreeWidgetItem *,int)")), self.openFile)
         QtCore.QObject.connect(self.main_ui.searchLineEdit, QtCore.SIGNAL(_fromUtf8("textChanged (const QString&)")), self.searchDB)
+
         self.main_ui.videoTreeW.setColumnWidth(0, 350)
         self.main_ui.videoTreeW.setColumnWidth(1, 100)
+
+        #lets add contextmenu to video lists
+
+
+        self.actnPlay=QtGui.QAction("&Play video",self.main_ui.videoTreeW)
+        QtCore.QObject.connect(self.actnPlay, QtCore.SIGNAL("triggered()"), self.playVideo )
+        self.main_ui.videoTreeW.addAction(self.actnPlay)
+
+        self.actnOpenLocation=QtGui.QAction("&Open video location",self.main_ui.videoTreeW)
+        QtCore.QObject.connect(self.actnOpenLocation, QtCore.SIGNAL("triggered()"), self.openLocation )
+        self.main_ui.videoTreeW.addAction(self.actnOpenLocation)
+
+        self.actnRetry=QtGui.QAction("&Retry download",self.main_ui.videoTreeW)
+        QtCore.QObject.connect(self.actnRetry, QtCore.SIGNAL("triggered()"), self.retryDownload )
+        self.main_ui.videoTreeW.addAction(self.actnRetry)
+
+        self.actnDelete=QtGui.QAction("&Remove",self.main_ui.videoTreeW)
+        QtCore.QObject.connect(self.actnDelete, QtCore.SIGNAL("triggered()"), self.deleteVideo )
+        self.main_ui.videoTreeW.addAction(self.actnDelete)
+
+        self.actnDeleteVideo=QtGui.QAction("&Remove + Delete video",self.main_ui.videoTreeW)
+        QtCore.QObject.connect(self.actnDeleteVideo, QtCore.SIGNAL("triggered()"), self.deleteVideoData )
+        self.main_ui.videoTreeW.addAction(self.actnDeleteVideo)
+
+        self.main_ui.videoTreeW.setContextMenuPolicy(QtCore.Qt.ActionsContextMenu )
+
+        #set column widths
+        self.main_ui.videoTreeW.setColumnWidth(0,250)
+        self.main_ui.videoTreeW.setColumnWidth(1,70)
+        self.main_ui.videoTreeW.setColumnWidth(2,360)
 
 
     def alert(self,text):
         QtGui.QMessageBox.warning(self,"Youtube Downloader", str(text))
 
+    def reportProblem(self):
+        QtGui.QMessageBox.information(self, "Youtube Downloader", str("Send an email to ajayi@oluwaseun.com"))
+
 
     def openSettings(self):
         self.settings=pref(self)
 
+    def deleteVideo(self):
+        twi=self.main_ui.videoTreeW.selectedItems()[0]
+        delete("DELETE FROM videos WHERE id=?", (twi.text(5),))
+        self.loadVideos()
+
+    def deleteVideoData(self):
+        twi=self.main_ui.videoTreeW.selectedItems()[0]
+        filepath=twi.text(6)+twi.text(0)+"_"+twi.text(4)+".mp4"
+        if os.path.exists(filepath):
+            os.remove(filepath)
+        delete("DELETE FROM videos WHERE id=?", (twi.text(5),))
+        self.loadVideos()
+
+    def retryDownload(self):
+        #youtube-dl takes time so we should skip the name check if it has been done
+        twi=self.main_ui.videoTreeW.selectedItems()[0]
+        if re.match("https?://",twi.text(0), re.IGNORECASE):
+            self.thread_getname(twi.text(4))
+        else:
+            self.onDone(twi.text(0), twi.text(4))
+
+
+    def playVideo(self):
+        twi=self.main_ui.videoTreeW.selectedItems()[0]
+        filepath=twi.text(6)+twi.text(0)+"_"+twi.text(4)+".mp4"
+
+        if os.path.exists(filepath):
+            os.startfile(filepath)
+        else:
+            self.alert("Video has been moved!")
+
+
+    def openLocation(self):
+        twi=self.main_ui.videoTreeW.selectedItems()[0]
+        filepath=twi.text(6)+twi.text(0)+"_"+twi.text(4)+".mp4"
+        subprocess.Popen(r'explorer /select, '+filepath)
         
     def showInputForm(self):
         cliptext=QtGui.QApplication.clipboard().text()
@@ -75,6 +148,14 @@ class YoutubeDownloader(QtGui.QMainWindow):
         
     def addToQueue(self,ytLink):
         v_id=video_id(ytLink)
+        print(v_id)
+        if re.match("^[-_a-zA-Z0-9]{11}$", v_id):
+            v_id="https://www.youtube.com/watch?v="+v_id
+        elif re.match("^PL[-_a-zA-Z0-9]{32}$", v_id):
+
+            v_id="https://www.youtube.com/watch?list="+v_id
+        else:
+            self.alert("Not a valid youtube URL")
         #check if item already exist
         matches=self.main_ui.videoTreeW.findItems(v_id,QtCore.Qt.MatchFlag(),4)
         if matches.__len__()<1:
@@ -86,9 +167,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
             item.setText(3,time.strftime("%d/%m/%Y %I:%M:%S"))
             item.setText(4,v_id)
             self.main_ui.videoTreeW.addTopLevelItem(item)
-            self.spawnit=backgroundProcess("youtube-dl.exe" + " -e ", v_id, "get_name")
-            QtCore.QObject.connect(self.spawnit, QtCore.SIGNAL("nameReady(const QString&, const QString&)"), self.onDone)
-            self.spawnit.start()
+            self.thread_getname(v_id)
             
             #ret=os.system("youtube-dl.exe -g "+ytLink)
             #print(ret)
@@ -98,28 +177,71 @@ class YoutubeDownloader(QtGui.QMainWindow):
                 selectedItem.setSelected(False)
             matches[0].setSelected(True)
 
-    def onDone(self,ret,item2search):
-        insert("INSERT INTO videos (video_id, namex, sizex, storage_path, statusx) VALUES(?,?,?,?,?)",(item2search,ret, 0,self.storage_path,"Starting..."))
-        matches=self.main_ui.videoTreeW.findItems(item2search,QtCore.Qt.MatchFlag(),4)
-        matches[0].setText(0,ret)
-        matches[0].setText(1,"Downloading video")
-        self.dlit=backgroundProcess("youtube-dl.exe" + " -o "+self.storage_path+"%(title)s_%(id)s.%(ext)s --newline ", item2search, "download_video")
+
+    def thread_getname(self, vID):
+        if self.spawnit is not None and self.spawnit.isRunning():
+            self.spawnit.quit()
+        self.spawnit=backgroundProcess("youtube-dl.exe" + " -e ", vID, "get_name")
+        QtCore.QObject.connect(self.spawnit, QtCore.SIGNAL("nameReady(const QString&, const QString&)"), self.onDone)
+        self.spawnit.start()
+
+    def thread_getVideo(self, vID):
+        self.dlit=backgroundProcess("youtube-dl.exe" + " -c -o "+self.storage_path+"%(title)s_%(id)s.%(ext)s --newline --youtube-skip-dash-manifest --prefer-ffmpeg --recode-video mp4  -f 43 ", vID, "download_video")
         QtCore.QObject.connect(self.dlit, QtCore.SIGNAL("statusReady(const QString&, const QString&)"), self.onStatus)
+        QtCore.QObject.connect(self.dlit, QtCore.SIGNAL("errorReady(const QString&, const QString&)"), self.onError)
         self.dlit.start()
 
-    def onStatus(self,ret,item2search):
+
+    def onDone(self,ret,item2search):
+        self.setStatusTip("")
+        checkIfExists=select("SELECT id FROM videos WHERE video_id=?",(item2search,)).fetchone()
+        if checkIfExists is None:
+            insert("INSERT INTO videos (video_id, namex, sizex, storage_path, statusx) VALUES(?,?,?,?,?)",(item2search,ret, 0,self.storage_path,"Starting..."))
+        else:
+            update("UPDATE videos SET statusx=?",("Restarting...",))
         matches=self.main_ui.videoTreeW.findItems(item2search,QtCore.Qt.MatchFlag(),4)
-        matches[0].setText(2,ret)
-        size=re.findall(r'\d+\.\d+Mib', ret)
-        print(size)
+        matches[0].setText(0,ret)
+        matches[0].setText(1,"...")
+        #lets append video ids so users can locate video on youtube later on
+        self.thread_getVideo(item2search)
+
+
+    def onError(self,ret,item2search):
+
+        self.setStatusTip(ret)
+
+
+    def onStatus(self,ret,item2search):
+        self.setStatusTip("")
+        matches=self.main_ui.videoTreeW.findItems(item2search,QtCore.Qt.MatchFlag(),4)
+        size=re.findall(r'(\d+\.\d+MiB|\d+\.\d+KiB)', ret)
+
+        extractedSize=None
         if size.__len__()>0:
             extractedSize=size[0]
+            print(size)
+            matches[0].setText(1,extractedSize)
+
+        #display human readable status
+        if ret.startswith("Deleting original file"):
+            ret="Download complete"
+
+        ret=re.sub("\[youtube\]\s[-_a-zA-Z0-9]{11}:\s","", ret)
+        ret=re.sub("\[download\]\sDestination:\s","Destination:", ret)
+        ret=re.sub("\[download\]\s+","", ret)
+        ret=re.sub("\[ffmpeg\]\s","", ret)
+
+        matches[0].setText(2,ret)
+
+        if extractedSize is not None:
+            params=(self.storage_path,ret,extractedSize,item2search,)
+            update("update videos set storage_path=?, statusx=?, sizex=? where video_id=?",params)
         else:
-            extractedSize="0Mib"
-        params=(self.storage_path,ret,extractedSize,item2search,)
-        #print(params)
-        update("update videos set storage_path=?, statusx=?, sizex=? where video_id=?",params)
-        
+            #skip size
+            params=(self.storage_path,ret,item2search,)
+            update("update videos set storage_path=?, statusx=? where video_id=?",params)
+
+
     def launchFile(self, theFile):
         os.startfile(theFile,"open")
 
@@ -140,6 +262,8 @@ class YoutubeDownloader(QtGui.QMainWindow):
         self.populateTreeWidget(data)
         self.main_ui.videoTreeW.setColumnHidden(4,True)
         self.main_ui.videoTreeW.setColumnHidden(5,True)
+        self.main_ui.videoTreeW.setColumnHidden(6,True)
+        self.main_ui.videoTreeW.setColumnHidden(7,True)
         del data
 
 

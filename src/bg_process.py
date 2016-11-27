@@ -22,7 +22,8 @@ class backgroundProcess(QtCore.QThread):
 
         
     def run(self):
-        ret=subprocess.Popen(self.cmd+" --no-check-certificate "+self.youtubeLink, stdout=subprocess.PIPE)#os.system("youtube-dl.exe -e "+ytLink)
+        #add --verbose to get full authenticated path to video
+        ret=subprocess.Popen(self.cmd+" --no-check-certificate "+self.youtubeLink, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)#os.system("youtube-dl.exe -e "+ytLink)
 
         for line in ret.stdout:
             if self.what2do=="get_name":
@@ -30,7 +31,8 @@ class backgroundProcess(QtCore.QThread):
             elif self.what2do=="download_video":
                 self.emit(QtCore.SIGNAL('statusReady(const QString&, const QString&)'), str(line,"utf-8").strip(),self.youtubeLink)
 
-
+        for err in ret.stderr:
+            self.emit(QtCore.SIGNAL('errorReady(const QString&, const QString&)'), str(err,"utf-8").strip(),self.youtubeLink)
 
             
 
