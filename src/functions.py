@@ -4,9 +4,10 @@ import urllib.request
 from urllib.error import HTTPError
 from urllib.error import URLError
 from PyQt4 import QtNetwork, QtCore
-import sqlite3
+import sqlite3, os
 
-conn = sqlite3.connect('db')
+conn = sqlite3.connect(os.path.join('database','db'))
+youtubeProgram="programs\youtube-dl.exe"
 
 
 
@@ -92,10 +93,12 @@ def video_id(value):
 def createDB():
     global conn
     c = conn.cursor()
+    currentWorkingDir=os.getcwd()
+    print(currentWorkingDir)
     # Create table
     c.execute('''CREATE TABLE IF NOT EXISTS "videos" (id INTEGER PRIMARY KEY AUTOINCREMENT, video_id TEXT, namex TEXT, sizex TEXT, storage_path TEXT, statusx TEXT, datesx TIMESTAMP DEFAULT CURRENT_TIMESTAMP);''')
     c.execute('''CREATE TABLE IF NOT EXISTS "settings" ("id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL, "name" TEXT NOT NULL  UNIQUE , "value" TEXT);''')
-    c.execute('''INSERT INTO  settings (name, value) SELECT "storage_path","" WHERE NOT EXISTS (SELECT 1 FROM settings WHERE  name="storage_path");''')
+    c.execute("INSERT INTO  settings (name, value) SELECT \"storage_path\", \""+currentWorkingDir+"\\downloads\" WHERE NOT EXISTS (SELECT 1 FROM settings WHERE  name=\"storage_path\");")
     conn.commit()
     print("table created")
 

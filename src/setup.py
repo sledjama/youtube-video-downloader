@@ -5,21 +5,21 @@ import os
 import zipfile
 ################################
 
-
+sys.argv.append("build")
 
 exe = Executable(
     script="main.py",
     icon="images/logo.ico",
-    base="Win32GUI",
-
-    compress=False
+    base="Win32GUI"
     )
     #
     #base="Win32GUI",
 
 
 buildOptions = dict(
-        excludes = ["tkinter"], append_script_to_exe = ['main.exe.manifest'])
+        excludes = ["tkinter"],
+        includes = ["ui.py"],
+        optimize=1)
 
 
 setup(

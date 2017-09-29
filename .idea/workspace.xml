@@ -2,12 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a88d3c5b-2ab7-4e59-a8de-36162077106f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yt.jpg" />
-      <change type="DELETED" beforePath="C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\nbproject\private\private.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\nbproject\private\private.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\nbproject\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\nbproject\project.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\bg_process.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\LIBEAY32.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\PyQt4.QtCore.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\PyQt4.QtGui.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\PyQt4.QtNetwork.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\QtCore4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\QtGui4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\QtNetwork4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\SSLEAY32.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\_hashlib.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\_socket.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\_sqlite3.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\_ssl.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\bz2.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\db" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\ffmpeg.exe" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\imageformats\qgif4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\imageformats\qico4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\imageformats\qjpeg4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\imageformats\qmng4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\imageformats\qsvg4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\imageformats\qtga4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\imageformats\qtiff4.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\library.zip" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\main.exe" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\python32.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\select.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\sip.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\sqlite3.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\unicodedata.pyd" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.2\youtube-dl.exe" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\compile.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\db" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\ffmpeg.exe" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\main.ui" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\pref.ui" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\preference.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\ui_main.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\ui_pref.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\url.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\youtube-dl.exe" afterPath="" />
+      <change type="DELETED" beforePath="C:\python_projects\youtube-video-downloader\src\yt.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/functions.py" afterPath="$PROJECT_DIR$/src/functions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/build/main.iss" afterPath="$PROJECT_DIR$/src/build/main.iss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/setup.py" afterPath="$PROJECT_DIR$/src/setup.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="youtube-video-downloader.iws" />
@@ -22,10 +62,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/youtube-video-downloader$test.coverage" NAME="test Coverage Results" MODIFIED="1480086959826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/youtube-video-downloader$main.coverage" NAME="main Coverage Results" MODIFIED="1480218779080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/youtube-video-downloader$main.coverage" NAME="main Coverage Results" MODIFIED="1506538935449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/youtube-video-downloader$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1480087410823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/youtube-video-downloader$compile.coverage" NAME="compile Coverage Results" MODIFIED="1480084541840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/youtube-video-downloader$test.coverage" NAME="test Coverage Results" MODIFIED="1480086959826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/youtube-video-downloader$compile.coverage" NAME="compile Coverage Results" MODIFIED="1506528925326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -60,58 +100,12 @@
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+              <caret line="85" column="3" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
               <folding>
                 <element signature="e#105#115#0" expanded="true" />
-                <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-                <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-                <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-                <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-                <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-                <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-                <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-                <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-                <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-                <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-                <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-                <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-                <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
+                <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+                <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bg_process.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="137" selection-start-line="25" selection-start-column="137" selection-end-line="25" selection-end-column="137" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64640886">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="videos" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/81453cb6/fe71535a-d0ba-4dcb-8c15-3e1cb2e920fb/..videos">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -120,13 +114,21 @@
         <entry file="file://$PROJECT_DIR$/src/functions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="67" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="67" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1480159849049" expanded="true" signature="2529:2719" placeholder="CREATE TABLE..IF..." />
-                <marker date="1480159849049" expanded="true" signature="2742:2876" placeholder="CREATE TABLE..IF..." />
-                <marker date="1480159849049" expanded="true" signature="2899:3028" placeholder="INSERT INTO ..." />
-                <marker date="1480159849049" expanded="true" signature="2935:2959" placeholder="SELECT &quot;stor..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#1#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,13 +150,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/compile.py" />
-        <option value="$PROJECT_DIR$/src/preference.py" />
         <option value="$PROJECT_DIR$/src/test.py" />
         <option value="$PROJECT_DIR$/src/test2.py" />
-        <option value="$PROJECT_DIR$/src/functions.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/bg_process.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/ui/compile.py" />
+        <option value="$PROJECT_DIR$/src/preference.py" />
+        <option value="$PROJECT_DIR$/src/classes/preference.py" />
+        <option value="$PROJECT_DIR$/src/functions.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/setup.py" />
       </list>
     </option>
   </component>
@@ -168,7 +173,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -180,6 +185,9 @@
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -212,10 +220,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youtube-video-downloader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youtube-video-downloader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,6 +255,21 @@
         <option name="myUseModuleSdk" value="true" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\python_projects\youtube-video-downloader\src\programs" />
+      <recent name="C:\python_projects\youtube-video-downloader\src\classes" />
+      <recent name="C:\python_projects\youtube-video-downloader\src\database" />
+      <recent name="C:\python_projects\youtube-video-downloader\src\ui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\python_projects\youtube-video-downloader\src\database" />
+      <recent name="C:\python_projects\youtube-video-downloader\src\programs" />
+      <recent name="C:\python_projects\youtube-video-downloader\src\classes" />
+      <recent name="C:\python_projects\youtube-video-downloader\src\ui\ui" />
+      <recent name="C:\python_projects\youtube-video-downloader\src\ui" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -284,7 +321,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="youtube-video-downloader" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/compile.py" />
+      <option name="SCRIPT_NAME" value="C:\python_projects\youtube-video-downloader\src\ui\compile.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -512,9 +549,9 @@
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.compile" />
+        <item index="1" class="java.lang.String" itemvalue="Python.compile" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -539,19 +576,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23560606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2389313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25281805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32933104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3070326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30555555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -559,8 +595,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -587,566 +624,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="67" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1480159849049" expanded="true" signature="2529:2719" placeholder="CREATE TABLE..IF..." />
-            <marker date="1480159849049" expanded="true" signature="2742:2876" placeholder="CREATE TABLE..IF..." />
-            <marker date="1480159849049" expanded="true" signature="2899:3028" placeholder="INSERT INTO ..." />
-            <marker date="1480159849049" expanded="true" signature="2935:2959" placeholder="SELECT &quot;stor..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1480159849049" expanded="true" signature="2529:2719" placeholder="CREATE TABLE..IF..." />
-            <marker date="1480159849049" expanded="true" signature="2742:2876" placeholder="CREATE TABLE..IF..." />
-            <marker date="1480159849049" expanded="true" signature="2899:3028" placeholder="INSERT INTO ..." />
-            <marker date="1480159849049" expanded="true" signature="2935:2959" placeholder="SELECT &quot;stor..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="85" column="3" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
           <folding>
             <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fe71535a-d0ba-4dcb-8c15-3e1cb2e920fb/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/81453cb6/fe71535a-d0ba-4dcb-8c15-3e1cb2e920fb/..sqlite_sequence">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/81453cb6/fe71535a-d0ba-4dcb-8c15-3e1cb2e920fb/..videos">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/preference.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4114286">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/81453cb6/fe71535a-d0ba-4dcb-8c15-3e1cb2e920fb/..settings">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="67" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="67" />
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1480159849049" expanded="true" signature="2529:2719" placeholder="CREATE TABLE..IF..." />
-            <marker date="1480159849049" expanded="true" signature="2742:2876" placeholder="CREATE TABLE..IF..." />
-            <marker date="1480159849049" expanded="true" signature="2899:3028" placeholder="INSERT INTO ..." />
-            <marker date="1480159849049" expanded="true" signature="2935:2959" placeholder="SELECT &quot;stor..." />
           </folding>
         </state>
       </provider>
@@ -1155,53 +650,192 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="137" selection-start-line="25" selection-start-column="137" selection-end-line="25" selection-end-column="137" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#105#115#0" expanded="true" />
-            <marker date="1480163316897" expanded="true" signature="4079:4108" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="4389:4418" placeholder="DELETE FROM ..." />
-            <marker date="1480163316897" expanded="true" signature="8205:8243" placeholder="SELECT id FR..videos..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8348" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8326:8410" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="8500:8527" placeholder="UPDATE video..." />
-            <marker date="1480163316897" expanded="true" signature="8506:8527" placeholder="INSERT INTO ..." />
-            <marker date="1480163316897" expanded="true" signature="9797:9866" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="9989:10049" placeholder="update video..." />
-            <marker date="1480163316897" expanded="true" signature="10310:10362" placeholder="select value..settings..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10638" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="10538:10641" placeholder="SELECT id, v..videos..." />
-            <marker date="1480163316897" expanded="true" signature="11486:11598" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64640886">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="3" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
+          <folding>
+            <element signature="e#105#115#0" expanded="true" />
+            <marker date="1506542525004" expanded="true" signature="10662:10765" placeholder="SELECT id, v..videos..." />
+            <marker date="1506542525004" expanded="true" signature="11610:11722" placeholder="SELECT id, v..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

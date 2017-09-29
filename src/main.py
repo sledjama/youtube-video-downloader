@@ -2,16 +2,16 @@
 # and open the template in the editor.
 version="0.1"
 import sys
-import os, re, subprocess
+import os, re, subprocess, programs
 from PyQt4 import QtCore, QtGui
 import time
 import json
 import filecmp
-from ui_main import Ui_main
-from preference import pref
+from ui.py.ui_main import Ui_main
+from classes.preference import pref
 from functions import *
-from url import *
-from bg_process import backgroundProcess
+from classes.url import *
+from classes.bg_process import backgroundProcess
 import sqlite3
 
 
@@ -124,6 +124,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
     def playVideo(self):
         twi=self.main_ui.videoTreeW.selectedItems()[0]
         filepath=twi.text(6)+twi.text(0)+"_"+twi.text(4)+".mp4"
+        print(filepath)
 
         if os.path.exists(filepath):
             os.startfile(filepath)
@@ -134,6 +135,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
     def openLocation(self):
         twi=self.main_ui.videoTreeW.selectedItems()[0]
         filepath=twi.text(6)+twi.text(0)+"_"+twi.text(4)+".mp4"
+        print(filepath)
         subprocess.Popen(r'explorer /select, '+filepath)
         
     def showInputForm(self):
@@ -150,10 +152,10 @@ class YoutubeDownloader(QtGui.QMainWindow):
         v_id=video_id(ytLink)
         print(v_id)
         if re.match("^[-_a-zA-Z0-9]{11}$", v_id):
-            v_id="https://www.youtube.com/watch?v="+v_id
+            fullURL="https://www.youtube.com/watch?v="+v_id
         elif re.match("^PL[-_a-zA-Z0-9]{32}$", v_id):
 
-            v_id="https://www.youtube.com/watch?list="+v_id
+            fullURL="https://www.youtube.com/watch?list="+v_id
         else:
             self.alert("Not a valid youtube URL")
         #check if item already exist
@@ -161,7 +163,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
         if matches.__len__()<1:
             #add to tree widget
             item=QtGui.QTreeWidgetItem(self.main_ui.videoTreeW)
-            item.setText(0,ytLink)
+            item.setText(0,fullURL)
             item.setText(1,"fetching URL...")
             item.setText(2,"...")
             item.setText(3,time.strftime("%d/%m/%Y %I:%M:%S"))
@@ -181,12 +183,12 @@ class YoutubeDownloader(QtGui.QMainWindow):
     def thread_getname(self, vID):
         if self.spawnit is not None and self.spawnit.isRunning():
             self.spawnit.quit()
-        self.spawnit=backgroundProcess("youtube-dl.exe" + " -e ", vID, "get_name")
+        self.spawnit=backgroundProcess(youtubeProgram + " -e ", vID, "get_name")
         QtCore.QObject.connect(self.spawnit, QtCore.SIGNAL("nameReady(const QString&, const QString&)"), self.onDone)
         self.spawnit.start()
 
     def thread_getVideo(self, vID):
-        self.dlit=backgroundProcess("youtube-dl.exe" + " -c -o "+self.storage_path+"%(title)s_%(id)s.%(ext)s --newline --youtube-skip-dash-manifest --prefer-ffmpeg --recode-video mp4  -f 43 ", vID, "download_video")
+        self.dlit=backgroundProcess(youtubeProgram + " -c -o "+self.storage_path+"%(title)s_%(id)s.%(ext)s --newline --youtube-skip-dash-manifest --prefer-ffmpeg --recode-video mp4  -f 43 ", vID, "download_video")
         QtCore.QObject.connect(self.dlit, QtCore.SIGNAL("statusReady(const QString&, const QString&)"), self.onStatus)
         QtCore.QObject.connect(self.dlit, QtCore.SIGNAL("errorReady(const QString&, const QString&)"), self.onError)
         self.dlit.start()
@@ -256,6 +258,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
             self.storage_path=data[0]+"\\"
         else:
             self.storage_path=""
+        print(self.storage_path)
 
     def loadVideos(self):
         data=select("SELECT id, video_id, namex, sizex, datesx, storage_path, statusx FROM videos ORDER BY id DESC limit 100").fetchall()

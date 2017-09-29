@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Youtube Video Downloader"
-#define MyAppVersion "0.1"
+#define MyAppVersion "0.2"
 #define MyAppPublisher "Ajayi Oluwaseun Emmanuel"
 #define MyAppURL "http://www.oluwaseun.com/"
 #define MyAppExeName "main.exe"
@@ -23,13 +23,10 @@ DefaultDirName={pf}\Oluwaseun\Youtube Downloader
 DisableDirPage=yes
 DefaultGroupName= Oluwaseun
 DisableProgramGroupPage=yes
-;LicenseFile=C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\license.txt
-OutputDir=C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader
+OutputDir=C:\python_projects\youtube-video-downloader
 OutputBaseFilename=YoutubeDownloaderSetup-{#MyAppVersion}
 Compression=lzma
 SolidCompression=yes
-;WizardImageFile=C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\WizardImageFile.bmp
-;SetupIconFile=C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\installer.ico
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -39,29 +36,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\_sqlite3.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\_hashlib.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\_socket.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\_ssl.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\bz2.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\LIBEAY32.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\library.zip"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\main.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\PyQt4.QtCore.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\PyQt4.QtGui.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\PyQt4.QtNetwork.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\python32.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\QtCore4.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\QtGui4.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\QtNetwork4.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\select.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\sip.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\sqlite3.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\SSLEAY32.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\unicodedata.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\youtube-dl.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\ffmpeg.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\Java\jdk1.7.0\projects\youtube-video-downloader\src\build\exe.win32-3.2\imageformats\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.4\main.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.4\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files                 
 
 [Icons]
