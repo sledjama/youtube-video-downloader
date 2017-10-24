@@ -150,7 +150,6 @@ class YoutubeDownloader(QtGui.QMainWindow):
         
     def addToQueue(self,ytLink):
         v_id=video_id(ytLink)
-        print(v_id)
         if re.match("^[-_a-zA-Z0-9]{11}$", v_id):
             fullURL="https://www.youtube.com/watch?v="+v_id
         elif re.match("^PL[-_a-zA-Z0-9]{32}$", v_id):
@@ -158,6 +157,8 @@ class YoutubeDownloader(QtGui.QMainWindow):
             fullURL="https://www.youtube.com/watch?list="+v_id
         else:
             self.alert("Not a valid youtube URL")
+
+        #
         #check if item already exist
         matches=self.main_ui.videoTreeW.findItems(v_id,QtCore.Qt.MatchFlag(),4)
         if matches.__len__()<1:
@@ -181,6 +182,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
 
 
     def thread_getname(self, vID):
+        #print("thread_getname", vID)
         if self.spawnit is not None and self.spawnit.isRunning():
             self.spawnit.quit()
         self.spawnit=backgroundProcess(youtubeProgram + " -e ", vID, "get_name")

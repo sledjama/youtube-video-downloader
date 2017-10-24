@@ -87,7 +87,7 @@ def video_id(value):
         if query.path[:3] == '/v/':
             return query.path.split('/')[2]
     # fail?
-    return None
+    return value
 
 
 def createDB():

@@ -8,7 +8,7 @@ import zipfile
 sys.argv.append("build")
 
 exe = Executable(
-    script="main.py",
+    script="Downloader.py",
     icon="images/logo.ico",
     base="Win32GUI"
     )
