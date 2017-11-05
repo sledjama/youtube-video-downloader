@@ -41,7 +41,8 @@ class Pref():
 
 
     def closePref(self):
-        self.parent.loadStoragePath()        self.pref_dialog.close()
+        self.parent.loadStoragePath()
+        self.pref_dialog.close()
 
     def browsePath(self):
         self.pref_ui.saveBtn.setEnabled(True)
