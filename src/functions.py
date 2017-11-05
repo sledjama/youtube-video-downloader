@@ -1,36 +1,9 @@
 import urllib.parse
 from urllib.parse import urlparse, parse_qs
 import urllib.request
-from urllib.error import HTTPError
-from urllib.error import URLError
-from PyQt4 import QtNetwork, QtCore
-import sqlite3, os
+import os
+import configs
 
-conn = sqlite3.connect(os.path.join('database','db'))
-youtubeProgram="programs\youtube-dl.exe"
-
-
-
-def callPage(path,params=None):
-    
-    url = path
-    data= None
-    if params is not None:
-        values=params
-        data = urllib.parse.urlencode(values)
-        data = data.encode('utf-8')
-    try:     
-        req = urllib.request.Request(url, data)
-        print("calling page...")
-        response = urllib.request.urlopen(req)
-        the_page = response.read()
-        return the_page.decode()
-    except HTTPError as e:
-        the_page="error:"+e.value
-        return the_page.decode()
-    except URLError as e:
-        the_page="error:"+e.value
-        return the_page.decode()
 
 
 def urlencode(param):
@@ -43,8 +16,8 @@ def check2int(obj):
     else:
         return "0"
 
-def int2check(obj, intiger):
-    if intiger=="1":
+def int2check(obj, intger):
+    if intger=="1":
         obj.setChecked(True)
     else:
         obj.setChecked(False)
@@ -90,50 +63,39 @@ def video_id(value):
     return value
 
 
-def createDB():
-    global conn
+def createDB(conn=configs.conn):
     c = conn.cursor()
-    currentWorkingDir=os.getcwd()
-    print(currentWorkingDir)
+    defaultDownloadPath=os.path.join(os.getcwd(), "downloads")
+    print("trying")
     # Create table
     c.execute('''CREATE TABLE IF NOT EXISTS "videos" (id INTEGER PRIMARY KEY AUTOINCREMENT, video_id TEXT, namex TEXT, sizex TEXT, storage_path TEXT, statusx TEXT, datesx TIMESTAMP DEFAULT CURRENT_TIMESTAMP);''')
     c.execute('''CREATE TABLE IF NOT EXISTS "settings" ("id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL, "name" TEXT NOT NULL  UNIQUE , "value" TEXT);''')
-    c.execute("INSERT INTO  settings (name, value) SELECT \"storage_path\", \""+currentWorkingDir+"\\downloads\" WHERE NOT EXISTS (SELECT 1 FROM settings WHERE  name=\"storage_path\");")
+    c.execute("INSERT INTO  settings (name, value) SELECT \"storage_path\", ? WHERE NOT EXISTS (SELECT 1 FROM settings WHERE  name=\"storage_path\");", (defaultDownloadPath, ))
     conn.commit()
-    print("table created")
 
 
 
-def insert(q,vals):
-    global conn
+def insert(q,vals,conn=configs.conn):
     c = conn.cursor()
-    # run query
     c.execute(q, vals)
     conn.commit()
     return c
 
-def update(q,vals):
-    global conn
+def update(q,vals, conn=configs.conn):
+    c = conn.cursor()
+    c.execute(q, vals)
+    conn.commit()
+
+def delete(q,vals, conn=configs.conn):
     c = conn.cursor()
     # run query
     c.execute(q, vals)
     conn.commit()
-    print(q)
 
-def delete(q,vals):
-    global conn
-    c = conn.cursor()
-    # run query
-    c.execute(q, vals)
-    conn.commit()
-    print(q)
-
-def select(q,vals=None):
-    global conn
+def select(q, vals=None, conn=configs.conn):
     c= conn.cursor()
     if vals is None:
         c.execute(q)
     else:
         c.execute(q, vals)
-    print(q)
     return c

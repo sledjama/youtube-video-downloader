@@ -29,7 +29,7 @@ class Ui_pref(object):
         pref.setMinimumSize(QtCore.QSize(0, 0))
         pref.setMaximumSize(QtCore.QSize(543, 429))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/rc/resources/logo.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/images/images/logo.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         pref.setWindowIcon(icon)
         self.tabWidget = QtGui.QTabWidget(pref)
         self.tabWidget.setGeometry(QtCore.QRect(10, 10, 521, 201))

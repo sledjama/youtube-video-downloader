@@ -1,8 +1,7 @@
-import os
-from PyQt4 import QtNetwork, QtCore, QtGui
+
+from PyQt4 import QtCore
 from functions import *
 import subprocess
-import time
 
     
 
@@ -13,17 +12,16 @@ class backgroundProcess(QtCore.QThread):
         self.cmd=cmd
         self.youtubeLink=youtubeLink
         self.what2do=what2do
-        print(self.cmd)
-        print(self.youtubeLink)
-        print(self.what2do)
+        print("threading working")
         
     def __del__(self):
         self.wait()
 
         
     def run(self):
+        processLink=self.cmd+" --no-check-certificate -f mp4/bestvideo "+self.youtubeLink
         #add --verbose to get full authenticated path to video
-        ret=subprocess.Popen(self.cmd+" --no-check-certificate "+self.youtubeLink, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)#os.system("youtube-dl.exe -e "+ytLink)
+        ret=subprocess.Popen(processLink, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)#os.system("youtube-dl.exe -e "+ytLink)
 
         for line in ret.stdout:
             if self.what2do=="get_name":

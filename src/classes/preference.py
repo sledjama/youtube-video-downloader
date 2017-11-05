@@ -4,7 +4,6 @@ from PyQt4 import QtCore, QtGui
 from ui.py.ui_pref import Ui_pref
 #from settingsThread import settings_thread
 from functions import *
-from classes.url import *
 import json
 
 
@@ -17,11 +16,12 @@ try:
 except AttributeError:
     _fromUtf8 = lambda s: s
     
-class pref():
+class Pref():
 
     def __init__(self, parenta):
         self.parent=parenta
         self.pref_dialog=QtGui.QDialog()
+        self.pref_dialog.setWindowIcon(QtGui.QIcon(configs.icon_path))
         self.pref_ui = Ui_pref()
         self.pref_ui.setupUi(self.pref_dialog)
         self.dir=None
@@ -40,10 +40,8 @@ class pref():
         QtGui.QMessageBox.warning(self.pref_dialog,"Youtube Downloader", str(text))
 
 
-
     def closePref(self):
-        self.parent.loadStoragePath()
-        self.pref_dialog.close()
+        self.parent.loadStoragePath()        self.pref_dialog.close()
 
     def browsePath(self):
         self.pref_ui.saveBtn.setEnabled(True)

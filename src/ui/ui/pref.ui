@@ -26,8 +26,8 @@
    <string>Preference</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../../phed/src/ui/resources.qrc">
-    <normaloff>:/rc/resources/logo.png</normaloff>:/rc/resources/logo.png</iconset>
+   <iconset resource="../../resources.qrc">
+    <normaloff>:/images/images/logo.png</normaloff>:/images/images/logo.png</iconset>
   </property>
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
@@ -120,7 +120,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../../phed/src/ui/resources.qrc"/>
+  <include location="../../resources.qrc"/>
  </resources>
  <connections/>
 </ui>
