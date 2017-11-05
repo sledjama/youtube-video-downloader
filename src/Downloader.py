@@ -214,7 +214,6 @@ class YoutubeDownloader(QtGui.QMainWindow):
 
 
     def onStatus(self,ret,item2search):
-        print(ret)
         self.setStatusTip("")
         matches=self.main_ui.videoTreeW.findItems(item2search,QtCore.Qt.MatchFlag(),4)
         size=re.findall(r'(\d+\.\d+%|\d+\.\d+GiB|\d+\.\d+MiB|\d+\.\d+KiB)', ret)
@@ -222,9 +221,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
         extractedSize=None
         if len(size)>0:
             extractedSize=size[0]
-            print(size)
             #only set the size first index is NOT d%
-            print(size[0][-1:])
             if size[0][-1:]=="%":
                 matches[0].setText(1,size[1])
                 extractedSize=size[1]
@@ -242,7 +239,6 @@ class YoutubeDownloader(QtGui.QMainWindow):
                     convertedSizeKB.append(int(float(x[:-3])))
                 elif x[-1:] == "%":
                     percentDone=int(float(x[:-3]))
-            print(convertedSizeKB)
             progressBar.setMaximum(100)
             if percentDone>0:
                 progressBar.setValue(percentDone)
@@ -276,7 +272,6 @@ class YoutubeDownloader(QtGui.QMainWindow):
             self.storage_path=data[0]+"\\"
         else:
             self.storage_path=""
-        print(self.storage_path)
 
     def loadVideos(self):
         data=select("SELECT id, video_id, namex, sizex, datesx, storage_path, statusx FROM videos ORDER BY id DESC limit 100").fetchall()
@@ -302,7 +297,6 @@ class YoutubeDownloader(QtGui.QMainWindow):
     def populateTreeWidget(self, data):
         for x in data:
             item=QtGui.QTreeWidgetItem(self.main_ui.videoTreeW)
-            print(x)
             item.setText(0, str(x[2]))
             item.setText(1, str(x[3]))
             item.setText(3,  str(x[4]))

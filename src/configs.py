@@ -12,3 +12,4 @@ if not os.path.exists(db_folder):
 #create database
 db_path=os.path.join(db_folder,db_file)
 conn = sqlite3.connect(db_path)
+

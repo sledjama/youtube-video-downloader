@@ -66,7 +66,6 @@ def video_id(value):
 def createDB(conn=configs.conn):
     c = conn.cursor()
     defaultDownloadPath=os.path.join(os.getcwd(), "downloads")
-    print("trying")
     # Create table
     c.execute('''CREATE TABLE IF NOT EXISTS "videos" (id INTEGER PRIMARY KEY AUTOINCREMENT, video_id TEXT, namex TEXT, sizex TEXT, storage_path TEXT, statusx TEXT, datesx TIMESTAMP DEFAULT CURRENT_TIMESTAMP);''')
     c.execute('''CREATE TABLE IF NOT EXISTS "settings" ("id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL, "name" TEXT NOT NULL  UNIQUE , "value" TEXT);''')

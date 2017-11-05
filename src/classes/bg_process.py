@@ -12,7 +12,6 @@ class backgroundProcess(QtCore.QThread):
         self.cmd=cmd
         self.youtubeLink=youtubeLink
         self.what2do=what2do
-        print("threading working")
         
     def __del__(self):
         self.wait()
