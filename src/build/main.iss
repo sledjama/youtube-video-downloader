@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Youtube Video Downloader"
-#define MyAppVersion "0.2"
+#define MyAppVersion "0.2.1"
 #define MyAppPublisher "Ajayi Oluwaseun Emmanuel"
 #define MyAppURL "http://www.oluwaseun.com/"
-#define MyAppExeName "main.exe"
+#define MyAppExeName "Downloader.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -36,7 +36,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.4\main.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.4\Downloader.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\python_projects\youtube-video-downloader\src\build\exe.win32-3.4\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files                 
 
