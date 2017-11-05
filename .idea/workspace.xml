@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a88d3c5b-2ab7-4e59-a8de-36162077106f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/downloads/PHP_Laravel - Building a forum like website from scratch (tut 1)_ABsGHTOi6Jc.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/downloads/PHP_Laravel - Building a forum like website from scratch (tut 2)_nQqqASrVZGc.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/downloads/PHP_Laravel - Building a forum like website from scratch (tut 3)_CGAvAEs6rVE.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/downloads/PHP_Laravel - Building a forum like website from scratch (tut 4)_PjwvfDmA-Dw.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/downloads/PHP_Laravel - Building a forum like website from scratch (tut 5)_SAVptocDSXs.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/downloads/PHP_Laravel - Building a forum like website from scratch (tut 6)_B-SZvBLnpR8.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/_version.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/configs.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/classes/url.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cmd.lnk" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/db" afterPath="$PROJECT_DIR$/src/database/db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yt.jpg" afterPath="$PROJECT_DIR$/yt.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Downloader.py" afterPath="$PROJECT_DIR$/src/Downloader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/bg_process.py" afterPath="$PROJECT_DIR$/src/classes/bg_process.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/preference.py" afterPath="$PROJECT_DIR$/src/classes/preference.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/functions.py" afterPath="$PROJECT_DIR$/src/functions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources_rc.py" afterPath="$PROJECT_DIR$/src/resources_rc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/setup.py" afterPath="$PROJECT_DIR$/src/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/compile.py" afterPath="$PROJECT_DIR$/src/ui/compile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/py/ui_pref.py" afterPath="$PROJECT_DIR$/src/ui/py/ui_pref.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/ui/main.ui" afterPath="$PROJECT_DIR$/src/ui/ui/main.ui" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/ui/pref.ui" afterPath="$PROJECT_DIR$/src/ui/ui/pref.ui" />
     </list>
     <ignored path="youtube-video-downloader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,8 +86,8 @@
       <file leaf-file-name="preference.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/classes/preference.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            <state relative-caret-position="663">
+              <caret line="60" column="30" lean-forward="false" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
               <folding>
                 <element signature="e#156#187#0" expanded="true" />
                 <marker date="1509900437290" expanded="true" signature="1837:1890" ph="UPDATE setti... " />
@@ -731,14 +705,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31587562" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31587562" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16263238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25267175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1433,8 +1406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/preference.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        <state relative-caret-position="663">
+          <caret line="60" column="30" lean-forward="false" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
           <folding>
             <element signature="e#156#187#0" expanded="true" />
             <marker date="1509900437290" expanded="true" signature="1837:1890" ph="UPDATE setti... " />
