@@ -6,11 +6,11 @@ many of these features are already available as free softwares, well, mostly com
 What i have done is create a GUI that uses these popular commandline tools
 youtube-dl and ffmpeg.
 
-watchout for future updates, i will be adding support to convert between many file formats
-thanks to ffmpeg.
+Future updates will include support to convert between many file formats,
+extracting audio from downloaded videos via ffmpeg and support for other download sites.
 
-At the moment, enjoy this.
 
-![Screenshot](yt.jpg?raw=true "What to expect")
+
+![Screenshot](preview.jpg?raw=true "What to expect")
 
 contact ajayi@oluwaseun.com
