@@ -8,7 +8,10 @@ from PyQt4 import QtGui, QtCore, QtTest
 from functions import *
 from src.Downloader import *
 from _version import __version__
-import configs
+import configs, os
+
+cwd = os.getcwd()
+sys.path.insert(0, cwd)
 
 app = QtGui.QApplication(sys.argv)
 

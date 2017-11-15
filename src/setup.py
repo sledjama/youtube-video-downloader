@@ -4,7 +4,7 @@ import sys
 
 sys.argv.append("build")
 #setup main file, icon and export base
-exe = Executable(script="Downloader.py",icon="images/logo.ico",base="Win32GUI")
+exe = Executable(script="test_Downloader.py",icon="images/logo.ico",base="Win32GUI")
 
 #setup options
 buildOptions = dict(
