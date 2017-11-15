@@ -1,0 +1,9 @@
+version: 0.1.{build}
+configuration: Debug
+clone_folder: C:\python_projects\youtube-video-downloader
+init:
+  - cmd: ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%
+install:
+  - cmd: '%PYTHON%/Scripts/pip.exe install https://download.lfd.uci.edu/pythonlibs/zhckc95n/PyQt4-4.11.4-cp35-cp35m-win32.whl'
+test_script:
+  - cmd: python.exe C:\python_projects\youtube-video-downloader\src\runtest.py
