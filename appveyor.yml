@@ -5,6 +5,7 @@ init:
   - cmd: 'C:\Python35\python.exe --version'
 install:
   - cmd: 'C:\Python35\Scripts\pip.exe install http://www.oluwaseun.com/PyQt4-4.11.4-cp35-cp35m-win32.whl'
+  - cmd: 'C:\Python35\Scripts\pip.exe install mock'
 test_script:
   - cmd: 'C:\Python35\python.exe C:\python_projects\youtube-video-downloader\src\runtest.py'
 
