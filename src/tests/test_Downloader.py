@@ -55,7 +55,7 @@ class TestYoutubeDownloader(unittest.TestCase):
         self.ytd.populateTreeWidget(inputData)
         sr=self.ytd.main_ui.videoTreeW.findItems("2017-11-05 00:04:00",QtCore.Qt.MatchExactly,3)
         result=reduce(lam, [reduce(lam,[x.text(0), x.text(1), x.text(2), x.text(3), x.text(4), x.text(5), x.text(6)]) for x in sr])
-        self.assertEqual(expectedResult, 0)
+        self.assertEqual(expectedResult, result)
 
     def test_searchDB(self):
         self.initDB()
