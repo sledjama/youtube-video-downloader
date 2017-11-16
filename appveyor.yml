@@ -2,8 +2,11 @@ version: 0.1.{build}
 configuration: Debug
 clone_folder: C:\python_projects\youtube-video-downloader
 init:
-  - cmd: C:\Python35\python.exe --version
+  - cmd: 'C:\Python35\python.exe --version'
 install:
   - cmd: 'C:\Python35\Scripts\pip.exe install http://www.oluwaseun.com/PyQt4-4.11.4-cp35-cp35m-win32.whl'
 test_script:
-  - cmd: python.exe C:\python_projects\youtube-video-downloader\src\runtest.py
+  - cmd: 'C:\Python35\python.exe C:\python_projects\youtube-video-downloader\src\runtest.py'
+
+build_script:
+- cmd: 'C:\Python35\python.exe C:\python_projects\youtube-video-downloader\src\runtest.py'
