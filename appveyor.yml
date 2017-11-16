@@ -9,4 +9,6 @@ test_script:
   - cmd: 'C:\Python35\python.exe C:\python_projects\youtube-video-downloader\src\runtest.py'
 
 build_script:
-- cmd: 'C:\Python35\python.exe C:\python_projects\youtube-video-downloader\src\runtest.py'
+  - cmd: 'cd C:\python_projects\youtube-video-downloader\src'
+  - cmd: 'dir'
+  - cmd: 'C:\Python35\python.exe runtest.py'

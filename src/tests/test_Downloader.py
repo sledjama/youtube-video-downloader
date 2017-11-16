@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from PyQt4 import QtGui, QtCore, QtTest
 
 from functions import *
-from src.Downloader import *
+from Downloader import *
 from _version import __version__
 import configs, os
 
