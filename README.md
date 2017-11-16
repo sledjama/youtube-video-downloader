@@ -1,4 +1,5 @@
-# README #
+# Youtube video downloader #
+[![Build status](https://ci.appveyor.com/api/projects/status/tpuiexbq8hyn9rq5?svg=true)](https://ci.appveyor.com/project/sledjama/youtube-video-downloader)
 
 Many youtube downloader out there either has lots of ads or you pay to use some features
 many of these features are already available as free softwares, well, mostly commandline based
