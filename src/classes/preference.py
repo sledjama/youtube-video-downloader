@@ -41,7 +41,7 @@ class Pref():
 
 
     def closePref(self):
-        self.parent.loadStoragePath()
+        self.parent.load_storage_path()
         self.pref_dialog.close()
 
     def browsePath(self):

@@ -41,7 +41,7 @@ class TestYoutubeDownloader(unittest.TestCase):
 
         for k,v in sampleLinks.items():
             self.ytd.main_ui.videoTreeW.clear()
-            self.ytd.addToQueue(k)
+            self.ytd.add_to_queue(k)
             matches=self.ytd.main_ui.videoTreeW.findItems(v,QtCore.Qt.MatchExactly,4)
             self.assertEqual(len(matches),1)
             self.assertEqual(v, matches[0].text(4))
@@ -52,22 +52,22 @@ class TestYoutubeDownloader(unittest.TestCase):
         lam=lambda x, y: x + y
         inputData=([ '1',  'V6JcxAN5kXs', 'Test video name', '30MiB', '2017-11-05 00:04:00','downloads', 'Download complete' ],[ '2',  'u6JcxAN5kXt', 'Test video name 2', '47MiB', '2017-11-05 00:04:00','downloads', 'Download complete' ])
         expectedResult="Test video name 247MiB2017-11-05 00:04:00u6JcxAN5kXt2downloadsTest video name30MiB2017-11-05 00:04:00V6JcxAN5kXs1downloads"
-        self.ytd.populateTreeWidget(inputData)
+        self.ytd.populate_tree_widget(inputData)
         sr=self.ytd.main_ui.videoTreeW.findItems("2017-11-05 00:04:00",QtCore.Qt.MatchExactly,3)
         result=reduce(lam, [reduce(lam,[x.text(0), x.text(1), x.text(2), x.text(3), x.text(4), x.text(5), x.text(6)]) for x in sr])
         self.assertEqual(expectedResult, result)
 
     def test_searchDB(self):
         self.initDB()
-        self.ytd.searchDB("Test searchDB name")
+        self.ytd.search_database("Test searchDB name")
         sr = self.ytd.main_ui.videoTreeW.findItems("QuhTEST9ui2", QtCore.Qt.MatchExactly, 4)
         self.assertEqual(sr[0].text(3), '2017-11-05 00:04:00')
-        #cleanup DB for next test
+        # cleanup DB for next test
         delete("DELETE FROM videos WHERE id=?",(self.dbid,))
 
     def test_loadVideos(self):
         self.initDB()
-        self.ytd.loadVideos()
+        self.ytd.load_videos()
         sr = self.ytd.main_ui.videoTreeW.findItems("QuhTEST9ui2", QtCore.Qt.MatchExactly, 4)
         self.assertEqual(sr[0].text(3), '2017-11-05 00:04:00')
         #cleanup DB for next test
