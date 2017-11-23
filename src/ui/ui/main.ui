@@ -155,6 +155,7 @@
      <string>Help</string>
     </property>
     <addaction name="actionReportProblem"/>
+    <addaction name="actionUpdate_Youtube_dl"/>
    </widget>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
@@ -366,6 +367,11 @@
    </property>
    <property name="visible">
     <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionUpdate_Youtube_dl">
+   <property name="text">
+    <string>Update Youtube-dl</string>
    </property>
   </action>
  </widget>
