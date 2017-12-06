@@ -29,7 +29,7 @@ import time
 from ui.py.ui_main import Ui_main
 from classes.preference import Pref
 from functions import *
-from classes.bg_process import backgroundProcess
+from classes.bg_process import BackgroundProcess
 from _version import __version__
 
 createDB()
@@ -310,7 +310,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
 
         if self.spawnit is not None and self.spawnit.isRunning():
             self.spawnit.quit()
-        self.spawnit = backgroundProcess(configs.youtubeProgram + " -e ", vID, "get_name")
+        self.spawnit = BackgroundProcess(configs.youtubeProgram + " -e ", vID, "get_name")
         QtCore.QObject.connect(self.spawnit, QtCore.SIGNAL("nameReady(const QString&, const QString&)"),
                                self.on_thread_name)
         self.spawnit.start()
@@ -344,7 +344,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
 
         """
 
-        self.dlit = backgroundProcess(configs.youtubeProgram + " -c -o "+self.storage_path+"%(title)s_%(id)s.%(ext)s --newline --youtube-skip-dash-manifest --prefer-ffmpeg --recode-video mp4  -f 43 ", video_id, "download_video")
+        self.dlit = BackgroundProcess(configs.youtubeProgram + " -c -o "+self.storage_path+"%(title)s_%(id)s.%(ext)s --newline --youtube-skip-dash-manifest --prefer-ffmpeg --recode-video mp4  -f 43 ", video_id, "download_video")
         QtCore.QObject.connect(self.dlit, QtCore.SIGNAL("statusReady(const QString&, const QString&)"), self.on_status)
         QtCore.QObject.connect(self.dlit, QtCore.SIGNAL("errorReady(const QString&, const QString&)"), self.on_error)
         self.dlit.start()
