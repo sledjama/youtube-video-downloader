@@ -68,11 +68,17 @@ class YoutubeDownloader(QtGui.QMainWindow):
         self.load_videos()
 
         # do the signal-slots
-        QtCore.QObject.connect(self.main_ui.addURL, QtCore.SIGNAL(_fromUtf8("triggered()")), self.show_input_form)
-        QtCore.QObject.connect(self.main_ui.actionPreferences, QtCore.SIGNAL(_fromUtf8("triggered()")), self.open_settings)
-        QtCore.QObject.connect(self.main_ui.actionReportProblem, QtCore.SIGNAL(_fromUtf8("triggered()")), self.report_problem)
-        QtCore.QObject.connect(self.main_ui.videoTreeW, QtCore.SIGNAL(_fromUtf8("itemDoubleClicked(QTreeWidgetItem *,int)")), self.open_file)
-        QtCore.QObject.connect(self.main_ui.searchLineEdit, QtCore.SIGNAL(_fromUtf8("textChanged (const QString&)")), self.search_database)
+        QtCore.QObject.connect(self.main_ui.addURL, QtCore.SIGNAL(_fromUtf8("triggered()")),
+                               self.show_input_form)
+        QtCore.QObject.connect(self.main_ui.actionPreferences, QtCore.SIGNAL(_fromUtf8("triggered()")),
+                               self.open_settings)
+        QtCore.QObject.connect(self.main_ui.actionReportProblem, QtCore.SIGNAL(_fromUtf8("triggered()")),
+                               self.report_problem)
+        QtCore.QObject.connect(self.main_ui.videoTreeW, QtCore.SIGNAL(
+                               _fromUtf8("itemDoubleClicked(QTreeWidgetItem *,int)")),
+                               self.open_file)
+        QtCore.QObject.connect(self.main_ui.searchLineEdit, QtCore.SIGNAL(
+                               _fromUtf8("textChanged (const QString&)")), self.search_database)
 
         # lets add contextmenu to video lists
         self.actnPlay = QtGui.QAction("&Play video", self.main_ui.videoTreeW)
@@ -95,12 +101,12 @@ class YoutubeDownloader(QtGui.QMainWindow):
         QtCore.QObject.connect(self.actnDeleteVideo, QtCore.SIGNAL("triggered()"), self.delete_video_data )
         self.main_ui.videoTreeW.addAction(self.actnDeleteVideo)
 
-        self.main_ui.videoTreeW.setContextMenuPolicy(QtCore.Qt.ActionsContextMenu )
+        self.main_ui.videoTreeW.setContextMenuPolicy(QtCore.Qt.ActionsContextMenu)
 
         # set column widths
-        self.main_ui.videoTreeW.setColumnWidth(0,250)
-        self.main_ui.videoTreeW.setColumnWidth(1,70)
-        self.main_ui.videoTreeW.setColumnWidth(2,310)
+        self.main_ui.videoTreeW.setColumnWidth(0, 250)
+        self.main_ui.videoTreeW.setColumnWidth(1, 70)
+        self.main_ui.videoTreeW.setColumnWidth(2, 310)
 
     def alert(self, warning_text):
         """
@@ -226,7 +232,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
 
         """
         twi = self.main_ui.videoTreeW.selectedItems()[0]
-        file_path = twi.text(6)+twi.text(0)+"_"+twi.text(4)+".mp4"
+        file_path = twi.text(6) + twi.text(0) + "_" + twi.text(4) + ".mp4"
         subprocess.Popen(r'explorer /select, '+file_path+"d")
         
     def show_input_form(self):
@@ -248,7 +254,8 @@ class YoutubeDownloader(QtGui.QMainWindow):
         if matchingNumbers is None:
             cliptext = ""
         returnedURL, returnedStatus = QtGui.QInputDialog.getText(self, "Paste Youtube link",
-                                                                 "Paste Youtube link below to add it to your queue:\t\t\t\t\t\t\t\t",
+                                                                 "Paste Youtube link below to add it "
+                                                                 "to your queue:\t\t\t\t\t\t\t\t",
                                                                  QtGui.QLineEdit.Normal, cliptext)
         # once url is gotten, lets add it to the tree widget as tree widget it
         if returnedStatus and returnedURL.strip() != "":
@@ -276,9 +283,10 @@ class YoutubeDownloader(QtGui.QMainWindow):
 
         # check if item already exist
         matches = self.main_ui.videoTreeW.findItems(v_id,QtCore.Qt.MatchFlag(),4)
-        if matches.__len__()<1:
+        if not matches:
             # add to tree widget, we mock it like it is coming from DB
-            data = (['', v_id, fullURL, 'fetching URL...', time.strftime("%d/%m/%Y %I:%M:%S"), self.storage_path, '...'],)
+            data = (['', v_id, fullURL, 'fetching URL...', time.strftime("%d/%m/%Y %I:%M:%S"),
+                     self.storage_path, '...'],)
             self.populate_tree_widget(data)
             self.thread_getname(v_id)
         else:
@@ -303,7 +311,8 @@ class YoutubeDownloader(QtGui.QMainWindow):
         if self.spawnit is not None and self.spawnit.isRunning():
             self.spawnit.quit()
         self.spawnit = backgroundProcess(configs.youtubeProgram + " -e ", vID, "get_name")
-        QtCore.QObject.connect(self.spawnit, QtCore.SIGNAL("nameReady(const QString&, const QString&)"), self.on_thread_name)
+        QtCore.QObject.connect(self.spawnit, QtCore.SIGNAL("nameReady(const QString&, const QString&)"),
+                               self.on_thread_name)
         self.spawnit.start()
 
     def is_file_downloaded(self, fileToCheck):
@@ -340,12 +349,12 @@ class YoutubeDownloader(QtGui.QMainWindow):
         QtCore.QObject.connect(self.dlit, QtCore.SIGNAL("errorReady(const QString&, const QString&)"), self.on_error)
         self.dlit.start()
 
-    def on_thread_name(self, ret, item2search):
+    def on_thread_name(self, returned_name, item2search):
         """
         This is called from the video download thread, if the commandline returns a video name
 
                Args:
-                   ret: This is the returned name from youtube
+                   returned_name: This is the returned name from youtube
                    item2search: This is the video ID being searched.
                Returns:
                    None
@@ -356,12 +365,12 @@ class YoutubeDownloader(QtGui.QMainWindow):
         checkIfExists = select("SELECT id FROM videos WHERE video_id=?", (item2search,)).fetchone()
 
         matches = self.main_ui.videoTreeW.findItems(item2search, QtCore.Qt.MatchFlag(), 4)
-        matches[0].setText(0, ret)
+        matches[0].setText(0, returned_name)
 
         if checkIfExists is None:
             # if video exists in treewidget
             insert("INSERT INTO videos (video_id, namex, sizex, storage_path, statusx) VALUES(?,?,?,?,?)",
-                   (item2search, ret, 0, self.storage_path, "Starting..."))
+                   (item2search, returned_name, 0, self.storage_path, "Starting..."))
             self.get_video_thread(item2search)
         elif not self.is_file_downloaded(item2search):
             # if video has not been downloaded and marked complete in DB
@@ -370,7 +379,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
         else:
             self.alert("File already downloaded")
 
-    def on_error(self, ret, item2search):
+    def on_error(self, returned_error, item2search):
         """
         When an error occurs, This is called. we just update the status bar for nwo
 
@@ -381,14 +390,14 @@ class YoutubeDownloader(QtGui.QMainWindow):
                    None
 
         """
-        self.setStatusTip(ret)
+        self.setStatusTip(returned_error)
 
-    def on_status(self, ret, item2search):
+    def on_status(self, returned_status, item2search):
         """
         When the commandline returns a status message, this gets called from the download thread
 
                Args:
-                   ret: The status message where we get that progressbar data from
+                   returned_status: The status message where we get that progressbar data from
                    item2search: The item being searched
                Returns:
                    None
@@ -396,10 +405,10 @@ class YoutubeDownloader(QtGui.QMainWindow):
         """
         self.setStatusTip("")
         matches = self.main_ui.videoTreeW.findItems(item2search,QtCore.Qt.MatchFlag(), 4)
-        size = re.findall(r'(\d+\.\d+%|\d+\.\d+GiB|\d+\.\d+MiB|\d+\.\d+KiB)', ret)
+        size = re.findall(r'(\d+\.\d+%|\d+\.\d+GiB|\d+\.\d+MiB|\d+\.\d+KiB)', returned_status)
 
         extractedSize = None
-        if len(size) > 0:
+        if size:
             extractedSize = size[0]
             # only set the size first index is NOT d%
             if size[0][-1:] == "%":
@@ -422,20 +431,20 @@ class YoutubeDownloader(QtGui.QMainWindow):
             progressBar.setMaximum(100)
             if percentDone > 0:
                 progressBar.setValue(percentDone)
-        ret = re.sub("\[youtube\]\s[-_a-zA-Z0-9]{11}:\s", "", ret)
-        ret = re.sub("\[download\]\sDestination:\s", "Destination:", ret)
-        ret = re.sub("\[download\]\s+", "", ret)
-        ret = re.sub("\[ffmpeg\]\s", "", ret)
+        returned_status = re.sub("\[youtube\]\s[-_a-zA-Z0-9]{11}:\s", "", returned_status)
+        returned_status = re.sub("\[download\]\sDestination:\s", "Destination:", returned_status)
+        returned_status = re.sub("\[download\]\s+", "", returned_status)
+        returned_status = re.sub("\[ffmpeg\]\s", "", returned_status)
 
-        if ret.startswith("Deleting original file") or ret.startswith("Not converting video file "):
-            ret = "Download complete"
+        if re.match(r"^(Deleting\soriginal\sfile|Not\sconverting\svideo\sfile\s)", returned_status):
+            returned_status = "Download complete"
 
         if extractedSize is not None:
-            params = (self.storage_path, ret, extractedSize, item2search,)
+            params = (self.storage_path, returned_status, extractedSize, item2search,)
             update("update videos set storage_path=?, statusx=?, sizex=? where video_id=?", params)
         else:
             # skip size
-            params = (self.storage_path, ret, item2search,)
+            params = (self.storage_path, returned_status, item2search,)
             update("update videos set storage_path=?, statusx=? where video_id=?", params)
 
     def load_storage_path(self):
@@ -450,7 +459,7 @@ class YoutubeDownloader(QtGui.QMainWindow):
         """
         data = select("select value from settings where name='storage_path'").fetchone()
         if data[0] != "":
-            self.storage_path = data[0]+"\\"
+            self.storage_path = data[0] + "\\"
         else:
             self.storage_path = ""
 
@@ -479,12 +488,13 @@ class YoutubeDownloader(QtGui.QMainWindow):
         Attempts to play the downloaded movie with the system's default player
 
                Args:
-                   None: No argument required except the default self
+                   twi: TreeWidgetItem where the download link will be extracted from
+                   indx: the column clicked, passed in from the doubleclick event but unneeded
                Returns:
                    None
 
         """
-        os.startfile(twi.text(6)+twi.text(0)+"_"+twi.text(4)+".mp4")
+        os.startfile(twi.text(6) + twi.text(0) + "_" + twi.text(4) + ".mp4")
 
     def search_database(self, searchText):
         """
